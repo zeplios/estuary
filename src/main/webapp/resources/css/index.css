@@ -1,0 +1,194 @@
+/* section */
+.section {
+	width: 570px;
+	margin: 40px auto 0 auto;
+	overflow: hidden;
+}
+
+.section ul {
+	width: 570px;
+}
+
+.section ul li {
+	float: left;
+	margin-right: 14px;
+	margin-bottom: 13px;
+	display: inline;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+
+.section ul li .photo {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+
+.section .rsp {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: absolute;
+	background: #000;
+	top: 0px;
+	left: 0px;
+}
+
+.section .text {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: -100px;
+	top: 0px;
+	overflow: hidden;
+}
+
+.section .text h3 {
+	width: 100px;
+	margin-top: 10px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #FFFFFF;
+	background: #000000;
+	font-family: "microsoft yahei";
+	font-size: 12px;
+}
+
+.slide-wp {
+	width: 1900px;
+	height: 398px;
+	position: relative;
+	left: 50%;
+	margin-left: -950px;
+}
+
+.slides,.slide-bg {
+	height: 398px;
+	overflow: hidden;
+	margin-top: -15px;
+}
+
+.slidesjs-pagination {
+	position: absolute;
+	top: 371px;
+	left: 50%;
+	z-index: 11;
+	margin-left: -52px;
+}
+
+.slidesjs-pagination li {
+	float: left;
+	margin-right: 10px;
+}
+
+.slidesjs-pagination li a {
+	text-indent: -9999px;
+	background-color: #333;
+	display: inline-block;
+	*display: block;
+	_display: block;
+	width: 25px;
+	height: 7px;
+	padding: 0;
+	_height: 2px;
+	_line-height: 1;
+}
+
+.slidesjs-pagination li a.active {
+	background-color: #fff;
+}
+
+.slideChild {
+	width: 945px;
+	margin: 0 auto;
+	z-index: 10;
+	height: 398px;
+	position: relative;
+}
+
+.slideChild a.opa {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	*display: block;
+	_display: block;
+	width: 100px;
+	height: 50px;
+	background-color: #fff;
+	filter: alpha(opacity = 0);
+	-ms-filter: "alpha(opacity=0)";
+	opacity: 0;
+}
+
+.slideImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}
+
+#brand {
+	width: 800px;
+	/*height:400px;
+				border:1px solid #dddddd;
+				box-shadow:0px 0px 5px #dddddd;*/
+	margin: 30px auto;
+}
+
+#brand .bd-box {
+	width: 800px;
+	/*height:400px;*/
+	overflow: hidden;
+	padding: 0px 24px;
+}
+
+#brand .bd-box li {
+	float: left;
+	width: 200px;
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+	margin: 10px 10px 0px 10px;
+}
+
+#brand .bd-box li img {
+	width: 200px;
+	height: 150px;
+	border: 1px solid #e9e8e8;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#brand .bd-box li span {
+	width: 200px;
+	height: 0px;
+	border: 1px solid #e9e8e8;
+	position: absolute;
+	left: 0px;
+	top: 38px;
+	z-index: 1;
+	text-align: center;
+	line-height: 75px;
+	font-size: 14px;
+	color: #FFF;
+	background: #ffa340;
+	font-weight: bold;
+	overflow: hidden;
+	display: none;
+}
+
+#brand .bd-box li a {
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 3;
+}

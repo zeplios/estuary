@@ -1,0 +1,124 @@
+/* CSS Document */
+
+
+.detail-title .user-operate{
+	float:right;
+	height:30px;
+	margin-top:10px;}
+.detail-title .user-operate a{
+	background:#CCC;
+	border-radius:4px;
+	font-size: 14px;
+	text-align:center;
+	width:60px;
+  color:#F00;   
+  cursor: pointer;  
+  height:20px;
+  padding:2px 5px;
+  line-height:20px;
+  margin-left:5px;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  }
+.detail-title .user-operate a:hover{
+	background: #dedede;}
+.detail-title .user-operate a.active{
+	background: #333333;
+	color: #ffffff;}
+
+.content img{
+	width:600px;
+	padding:23px;}
+.active-introduce{
+	margin:10px 0;
+	}
+
+.active-introduce h3{
+	color:red;
+	font-style:normal;
+	font-size:12px;
+	margin-left:15px;
+	height:30px;
+	line-height:30px;}
+.inner-album{
+	
+	margin:30px 0;
+	}
+.comment-total{
+	background:url(../img/home/cmt_bg.png) no-repeat;
+	height:30px;
+	padding-left:30px;}
+.coment{
+	background:#f2f2f2;
+	width:646px;
+	border-radius:4px;}
+.comment-list{
+	padding:0 20px;}
+.coment-area{padding:20px ;}
+.comment-list li{
+	padding:20px 0;
+	border-bottom:1px dashed #CCCCCC}
+.comment-list li img{
+	width:36px;
+	height:36px;
+	float:left;
+	margin-left:-15px;}
+.comment-list li a,.coment-time{
+	height;12px;
+	line-height:12px;
+	padding-left:15px;
+	float:left;}
+.coment-info{
+	float:right;
+	width:552px;
+	font-size:14px;
+	margin-top:-20px;
+	line-height:1.6em;}
+.user-info a{
+	color:#000;}
+.coment-area img{
+	float:left;
+	margin-left: -20px;}
+.coment-area textarea{
+	border:1px solid rgba(0,0,0,0.4);
+    height: 56px;
+    outline: medium none;
+    overflow: auto;
+    resize: none;
+    width: 530px;	
+	float:left;
+	margin-left:15px;
+	font-size:14px;
+	}
+
+
+.tm_like ul li{
+	float:left;
+	padding:0 5px 0 0;}
+/**side***/
+.may-intersting{
+	padding-bottom:px;
+	height:395px;
+	background:#fff;}
+.may-intersting h3{
+	height:40px;
+	line-height:40px;
+	background:#fff;
+	text-align:center;
+	border:1px solid #d9d9d9;}
+.may-intersting ul li{
+	float:left;
+	}
+.may-intersting ul li img{
+	width:100px;
+	height:110px;}
+table .c_td{
+	height:40px;
+	display:block;}
+table .c_input input{
+	hiehgt:30px;
+	width:140px;
+	margin-left:-100px;
+	}

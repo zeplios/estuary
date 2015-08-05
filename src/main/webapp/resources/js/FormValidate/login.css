@@ -1,0 +1,103 @@
+#login-main {
+	width: 980px;
+	height: 300px;
+	top:30px;
+	margin:0 auto;
+	position: relative;
+	font-size: 12px;
+}
+ol {
+	list-style: none;
+}
+#login-main .cap {
+	margin: 0;
+	padding: 0;
+	top: 98px;
+	left: 300px;
+	width: 400px;
+	border: 1px solid;
+}
+#loginForm {
+	height: 270px;
+	position: relative;
+	border: 1px solid #d7d7d7;
+	box-shadow: 0 0 10px #d7d7d7;
+	background-color: #fff;
+	position: absolute;
+	width: 382px;
+	left: 300px;
+	color: #818181;
+}
+#login-main .cap h3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	line-height: 40px;
+}
+#login-main .cap a {
+	position: absolute;
+	color: #818181;
+	left: 173px;
+	top: 27px;
+}
+.cap .login-error {
+	position: absolute;
+	top: 24px;
+	left: 91px;
+}
+#login-main a {
+	text-decoration: none;
+}
+#login-main a:hover {
+	text-decoration: underline;
+}
+#loginForm ol {
+	padding-top: 20px;
+	padding-left: 40px;
+}
+#loginForm li {
+	line-height: 30px;
+}
+#loginForm li input {
+	width: 295px;
+	height: 33px;
+	line-height: 33px;
+	border: 1px solid #ccd1d5;
+	display: block;
+	border-radius: 5px;
+}
+#loginForm input.btn-submit {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 88px;
+	height: 31px;
+	line-height: 31px;
+	cursor: pointer;
+	color: #fff;
+	margin: 20px auto;
+	border: 0;
+	background: url(loginbutton.png) no-repeat 0 0;
+}
+#loginForm input.btn-submit:hover {
+	background-position: 0 -31px;
+}
+#loginForm input.btn-submit:active {
+	background-position: 0 -62px;
+}
+#loginForm .loginError {
+	position: absolute;
+	width: 298px;
+	top: 301px;
+	left: 40px;
+	color: #BF1623;
+}
+.field-validation-error {
+	color: #BF1623;
+}
+.kitjs-validator {
+	color: #BF1623;
+}

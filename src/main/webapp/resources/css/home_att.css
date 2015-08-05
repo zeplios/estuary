@@ -1,0 +1,93 @@
+/* CSS Document */
+
+.user_right .main_title{
+	height:40px;
+	padding:10px 0;
+	border-bottom:1px solid #ac5118;
+	text-align:left;}
+.main_title span{
+	display:block;
+	float:left;
+	width:40px;
+	height:40px;}
+.main_title h3{
+	font-weight:normal;
+	font-size:16px;
+	color:#ac5118;}
+.list ul li{list-style-type:none;
+		width:897px;		
+		border-bottom:1px solid #ac5118;
+ }
+.list_da{
+height:100px;
+position:relative;} 
+#list_db{
+display:none;
+height:100px;
+background:#aaa;}
+.user_portrait{
+	width:72px;
+	height:72px;
+	padding:14px ;
+	float:left;}
+.user_co{
+	float:left;
+	height:72px;
+	padding:14px 0;}
+.user_co_top{
+	height:36px;
+	width:797px;}
+.user_co_bottom{
+	height:36px;}
+.user_co_top .user_co_topA a{
+	color:#ac5118;}
+.user_co_topB{
+	float:right;
+	margin-right:20px;}
+.user_co_top .user_co_topB a{
+	padding:4px 10px;
+	background:#f9f7f7;
+	float:right;
+	border:1px solid #666;
+	margin-left:-1px;}
+.list li span{
+	display:inline;}
+.list li:hover{
+	background:#e8e8ea;	
+	}
+
+.page_nav{
+	background:#fbfafa;
+	width:957px;
+	margin:15px 0 -30px -30px;}
+.page_info{
+	float:left;
+	margin-left:30px;
+	width:160px;
+	padding-bottom:30px;}
+.page_nav_list{
+	float:left;
+	margin-left:20px;}
+.page_nav_list li{
+	border:1px solid #b0afaf;
+	padding: 3px 10px;
+	display:inline;
+	float:left;
+	margin-left:10px;}
+.page_btn{
+	margin-right:31px;;
+    
+	float:right;}
+.btn_prev_a{
+	text-align:center;
+	display:block;
+	float:right;
+	border:1px solid #b0afaf;
+	width:45px;
+	padding: 3px 5px;
+	margin-right:-1px;}
+#tb_2{
+	background: #e8e8ea;
+	
+	}
+
