@@ -54,6 +54,7 @@ public abstract class Info {
 		this.id = id;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getTitle() {
 		return title;
 	}
@@ -62,7 +63,7 @@ public abstract class Info {
 		this.title = title;
 	}
 
-	@Column(name="description")
+	@Column(name="description", columnDefinition="varchar(500) default ''")
 	public String getDesc() {
 		return desc;
 	}
@@ -90,6 +91,7 @@ public abstract class Info {
 		this.type = type;
 	}
 
+	@Column(nullable=false, columnDefinition="int(6) default 0")
 	public Integer getStatus() {
 		return status;
 	}
@@ -98,6 +100,7 @@ public abstract class Info {
 		this.status = status;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getPicture() {
 		return picture;
 	}
@@ -106,7 +109,7 @@ public abstract class Info {
 		this.picture = picture;
 	}
 
-	@Column(name="viewcount")
+	@Column(name="viewcount", columnDefinition="int default 0")
 	public Integer getViewCount() {
 		return viewCount;
 	}
@@ -115,7 +118,7 @@ public abstract class Info {
 		this.viewCount = viewCount;
 	}
 
-	@Column(name="commentcount")
+	@Column(name="commentcount", columnDefinition="int default 0")
 	public Integer getCommentCount() {
 		return commentCount;
 	}
@@ -124,7 +127,7 @@ public abstract class Info {
 		this.commentCount = commentCount;
 	}
 
-	@Column(name="thumbupcount")
+	@Column(name="thumbupcount", columnDefinition="int default 0")
 	public Integer getThumbupCount() {
 		return thumbupCount;
 	}
@@ -133,7 +136,7 @@ public abstract class Info {
 		this.thumbupCount = thumbupCount;
 	}
 
-	@Column(name="collectcount")
+	@Column(name="collectcount", columnDefinition="int default 0")
 	public Integer getCollectCount() {
 		return collectCount;
 	}
@@ -142,7 +145,7 @@ public abstract class Info {
 		this.collectCount = collectCount;
 	}
 
-	@Column(name="addtime", updatable=false)
+	@Column(name="addtime", updatable=false, nullable=false, columnDefinition="TIMESTAMP default CURRENT_TIMESTAMP")
 	public Timestamp getAddTime() {
 		return addTime;
 	}
@@ -170,7 +173,7 @@ public abstract class Info {
 	}
 
 	@ManyToMany
-    @JoinTable(name = "_thumbup", joinColumns = {@JoinColumn(name = "infoid") }, inverseJoinColumns = { @JoinColumn(name = "uid") })
+    @JoinTable(name = "info_thumbup", joinColumns = {@JoinColumn(name = "infoid") }, inverseJoinColumns = { @JoinColumn(name = "uid") })
 	public Set<User> getThumbupUsers() {
 		return thumbupUsers;
 	}
@@ -180,7 +183,7 @@ public abstract class Info {
 	}
 	
 	@ElementCollection(fetch=FetchType.LAZY)
-	@CollectionTable(name="_image", joinColumns=@JoinColumn(name="infoid"))
+	@CollectionTable(name="info_image", joinColumns=@JoinColumn(name="infoid"))
 	public List<String> getImages() {
 		return images;
 	}
@@ -189,6 +192,7 @@ public abstract class Info {
 		this.images = images;
 	}
 	
+	@Column(nullable=false, columnDefinition="bit default 0")
 	public Boolean getDeleted() {
 		return deleted;
 	}

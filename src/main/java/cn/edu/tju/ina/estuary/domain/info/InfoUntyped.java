@@ -13,7 +13,7 @@ import org.hibernate.annotations.Polymorphism;
 import org.hibernate.annotations.PolymorphismType;
 
 @Entity
-@Table(name="_info")
+@Table(name="info_info")
 @Inheritance(strategy=InheritanceType.JOINED)
 @Polymorphism(type=PolymorphismType.EXPLICIT)
 @DynamicInsert

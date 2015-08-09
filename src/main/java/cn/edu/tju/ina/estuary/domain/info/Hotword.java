@@ -2,6 +2,7 @@ package cn.edu.tju.ina.estuary.domain.info;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,7 +12,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 @Entity
-@Table(name="_hotword")
+@Table(name="info_hotword")
 @DynamicInsert
 @DynamicUpdate
 public class Hotword implements Serializable {
@@ -30,12 +31,16 @@ public class Hotword implements Serializable {
 	public void setId(int id) {
 		this.id = id;
 	}
+	
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getWord() {
 		return word;
 	}
 	public void setWord(String word) {
 		this.word = word;
 	}
+	
+	@Column(nullable=false, columnDefinition="int default 0")
 	public int getCount() {
 		return count;
 	}

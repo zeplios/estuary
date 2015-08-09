@@ -11,7 +11,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 @Entity
-@Table(name="_photo")
+@Table(name="info_photo")
 @PrimaryKeyJoinColumn(name="id")
 @DynamicInsert
 @DynamicUpdate

@@ -15,7 +15,7 @@ import javax.persistence.Table;
 import cn.edu.tju.ina.estuary.domain.info.InfoSingle;
 
 @Entity
-@Table(name="_comment")
+@Table(name="info_comment")
 public class Comment implements Serializable {
 	/** Default value included to remove warning. Remove or modify at will. **/
 	private static final long serialVersionUID = 1L;
@@ -68,6 +68,7 @@ public class Comment implements Serializable {
 		this.info = info;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getContent() {
 		return content;
 	}
@@ -76,7 +77,7 @@ public class Comment implements Serializable {
 		this.content = content;
 	}
 
-	@Column(name="addtime")
+	@Column(name="addtime", nullable=false, columnDefinition="TIMESTAMP default CURRENT_TIMESTAMP")
 	public Timestamp getAddTime() {
 		return addTime;
 	}
@@ -85,6 +86,7 @@ public class Comment implements Serializable {
 		this.addTime = addTime;
 	}
 
+	@Column(nullable=false, columnDefinition="bit default 0")
 	public Boolean getHasRead() {
 		return hasRead;
 	}

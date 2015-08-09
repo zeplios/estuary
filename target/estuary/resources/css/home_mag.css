@@ -1,0 +1,138 @@
+/* CSS Document */
+
+.user_right .main_title{
+	height:40px;
+	padding:10px 0;
+	border-bottom:1px solid #ac5118;
+	text-align:left;}
+.main_title span{
+	display: block;
+float: left;
+width: 30px;
+height: 30px;
+padding: 10px;
+}
+.main_title h3{
+font-weight: normal;
+font-size: 16px;
+color: #ac5118;
+height: 40px;
+line-height: 40px;
+width: 300px;
+float: left;
+}
+.list ul li{list-style-type:none;
+		width:860px;		
+		border-bottom:1px solid #ac5118;
+ }
+.list_da{
+height:100px;
+position:relative;} 
+#list_db{
+display:none;
+height:100px;
+background:#aaa;}
+.user_portrait{
+	width:72px;
+	height:72px;
+	padding:14px ;
+	float:left;}
+.user_co{
+	float:left;
+	height:72px;
+	padding:14px 0;}
+.user_co_top{
+	height:36px;
+	width:797px;}
+.user_co_bottom{
+	height:36px;}
+.user_co_top .user_co_topA a{
+	color:#ac5118;}
+.user_co_topB{
+	float:right;
+	margin-right:20px;}
+a.item_del_btn.user_co_topB a{
+	padding:4px 10px;
+	background:#f9f7f7;
+	float:right;
+	border:1px solid #666;
+	margin-left:-1px;}
+.list li span{
+	display:inline;}
+.list li:hover{
+	background:#e8e8ea;	
+	}
+
+.page_nav{
+	background:#fbfafa;
+	width:957px;
+	margin:15px 0 -30px -30px;}
+.page_info{
+	float:left;
+	margin-left:30px;
+	width:160px;
+	padding-bottom:30px;}
+.page_nav_list{
+	float:left;
+	margin-left:20px;}
+.page_nav_list li{
+	border:1px solid #b0afaf;
+	padding: 3px 10px;
+	display:inline;
+	float:left;
+	margin-left:10px;}
+.page_btn{
+	margin-right:31px;;
+    
+	float:right;}
+.btn_prev_a{
+	text-align:center;
+	display:block;
+	float:right;
+	border:1px solid #b0afaf;
+	width:45px;
+	padding: 3px 5px;
+	margin-right:-1px;}
+#tb_4{
+	background: #e8e8ea;
+	
+	}
+.item_del_btn{
+	padding: 4px 10px;
+background: #f9f7f7;
+float: right;
+border: 1px solid #666;
+margin-left: -1px;
+position: relative;
+top: 20px;
+right: 60px;
+	}
+
+.v_name{
+	float:left;
+	padding-top:20px;
+	color:#c8c8c8;
+	font-size:14px;
+}
+.comment_info{
+	color:#900;
+	font-size:12px;
+	padding:60px 0px 10px 100px;
+	float:left;
+}
+.v_comment a{
+	color:#900;}
+.v_comment a:hover{
+	color:#036;}
+
+.imga{
+	padding:20px 20px 20px 50px;
+	float:left;}
+.intro_title{
+	text-indent:24px;
+	padding:5px;
+	display:block;
+	width:250px;
+	height:100px;
+	color:#900;
+	font-size:12px;}

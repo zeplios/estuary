@@ -1,6 +1,7 @@
 package cn.edu.tju.ina.estuary.domain.info;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="_info_type")
+@Table(name="info_info_type")
 public class InfoType implements Serializable {
 	/** Default value included to remove warning. Remove or modify at will. **/
 	private static final long serialVersionUID = 1L;
@@ -19,7 +20,7 @@ public class InfoType implements Serializable {
 	private String className;
 	private String listName;
 	private boolean show;
-	private String addTime;
+	private Timestamp addTime;
 
 	@Id
 	@GeneratedValue
@@ -31,6 +32,7 @@ public class InfoType implements Serializable {
 		this.id = id;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getName() {
 		return name;
 	}
@@ -39,7 +41,7 @@ public class InfoType implements Serializable {
 		this.name = name;
 	}
 
-	@Column(name="class_name")
+	@Column(name="class_name", nullable=false, columnDefinition="varchar(50) default ''")
 	public String getClassName() {
 		return className;
 	}
@@ -48,7 +50,7 @@ public class InfoType implements Serializable {
 		this.className = className;
 	}
 
-	@Column(name="list_name")
+	@Column(name="list_name", nullable=false, columnDefinition="varchar(50) default ''")
 	public String getListName() {
 		return listName;
 	}
@@ -57,6 +59,8 @@ public class InfoType implements Serializable {
 		this.listName = listName;
 	}
 
+	/* whether show in main page*/
+	@Column(name="showinmp", nullable=false, columnDefinition="bit default 1")
 	public boolean isShow() {
 		return show;
 	}
@@ -65,12 +69,12 @@ public class InfoType implements Serializable {
 		this.show = show;
 	}
 
-	@Column(name="addtime")
-	public String getAddTime() {
+	@Column(name="addtime", nullable=false, columnDefinition="TIMESTAMP default CURRENT_TIMESTAMP")
+	public Timestamp getAddTime() {
 		return addTime;
 	}
 
-	public void setAddTime(String addTime) {
+	public void setAddTime(Timestamp addTime) {
 		this.addTime = addTime;
 	}
 

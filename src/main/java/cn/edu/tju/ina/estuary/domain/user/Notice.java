@@ -18,7 +18,7 @@ import org.hibernate.annotations.DynamicUpdate;
 import cn.edu.tju.ina.estuary.domain.info.InfoSingle;
 
 @Entity
-@Table(name = "_notice")
+@Table(name = "info_notice")
 @DynamicInsert
 @DynamicUpdate
 public class Notice implements Serializable {
@@ -68,6 +68,8 @@ public class Notice implements Serializable {
 	public void setInfo(InfoSingle info) {
 		this.info = info;
 	}
+	
+	@Column(nullable=false, columnDefinition="varchar(200) default ''")
 	public String getContent() {
 		return content;
 	}
@@ -75,14 +77,15 @@ public class Notice implements Serializable {
 		this.content = content;
 	}
 	
-	@Column(name="addtime")
+	@Column(name="addtime", nullable=false, columnDefinition="TIMESTAMP default CURRENT_TIMESTAMP")
 	public Timestamp getAddTime() {
 		return addTime;
 	}
 	public void setAddTime(Timestamp addTime) {
 		this.addTime = addTime;
 	}
-	@Column(name="has_read")
+	
+	@Column(name="has_read", nullable=false, columnDefinition="bit default 0")
 	public Boolean getHasRead() {
 		return hasRead;
 	}

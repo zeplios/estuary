@@ -12,7 +12,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 @Entity
-@Table(name="_album")
+@Table(name="info_album")
 @PrimaryKeyJoinColumn(name="id")
 @DynamicInsert
 @DynamicUpdate

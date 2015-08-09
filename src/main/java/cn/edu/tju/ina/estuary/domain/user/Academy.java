@@ -2,6 +2,7 @@ package cn.edu.tju.ina.estuary.domain.user;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,7 +11,7 @@ import javax.validation.constraints.NotNull;
 
 
 @Entity
-@Table(name = "_academy")
+@Table(name = "info_academy")
 public class Academy implements Serializable {
 	/** Default value included to remove warning. Remove or modify at will. **/
 	private static final long serialVersionUID = 1L;
@@ -29,6 +30,7 @@ public class Academy implements Serializable {
 	}
 
 	@NotNull
+	@Column(columnDefinition="varchar(50) default ''")
 	public String getName() {
 		return name;
 	}

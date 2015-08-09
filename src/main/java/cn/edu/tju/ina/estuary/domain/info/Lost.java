@@ -1,5 +1,6 @@
 package cn.edu.tju.ina.estuary.domain.info;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
@@ -8,7 +9,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 @Entity
-@Table(name="_lost")
+@Table(name="info_lost")
 @PrimaryKeyJoinColumn(name="id")
 @DynamicInsert
 @DynamicUpdate
@@ -22,27 +23,36 @@ public class Lost extends InfoUntyped {
 	private String place;
 	private Boolean complete;
 	
+	@Column(nullable=false, columnDefinition="bit default 1")
 	public Boolean getOwner() {
 		return owner;
 	}
 	public void setOwner(Boolean owner) {
 		this.owner = owner;
 	}
+	
+	@Column(nullable=false, columnDefinition="bit default 0")
 	public Boolean getComplete() {
 		return complete;
 	}
+	
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getOwnerid() {
 		return ownerid;
 	}
 	public void setOwnerid(String ownerid) {
 		this.ownerid = ownerid;
 	}
+	
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getContact() {
 		return contact;
 	}
 	public void setContact(String contact) {
 		this.contact = contact;
 	}
+	
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getPlace() {
 		return place;
 	}

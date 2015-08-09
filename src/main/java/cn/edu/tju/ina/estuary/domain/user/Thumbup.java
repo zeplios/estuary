@@ -15,7 +15,7 @@ import javax.persistence.Table;
 import cn.edu.tju.ina.estuary.domain.info.InfoSingle;
 
 @Entity
-@Table(name="_thumbup")
+@Table(name="info_thumbup")
 public class Thumbup implements Serializable {
 
 	private static final long serialVersionUID = -1839802699353935021L;
@@ -61,7 +61,7 @@ public class Thumbup implements Serializable {
 		this.type = type;
 	}
 	
-	@Column(name="thtime")
+	@Column(name="thtime", nullable=false, columnDefinition="TIMESTAMP default CURRENT_TIMESTAMP")
 	public Timestamp getAddTime() {
 		return addTime;
 	}

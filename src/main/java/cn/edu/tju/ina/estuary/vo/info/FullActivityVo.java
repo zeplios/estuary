@@ -12,7 +12,7 @@ public class FullActivityVo extends FullInfoVo {
 	public FullActivityVo(Activity info) {
 		super(info);
 		this.area = info.getArea();
-		this.time = info.getTime();
+		this.time = info.getTime().toString();
 		this.orgName = info.getOrgName();
 		this.orgIntro = info.getOrgIntro();
 	}

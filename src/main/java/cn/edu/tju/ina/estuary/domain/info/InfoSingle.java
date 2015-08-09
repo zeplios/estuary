@@ -9,7 +9,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 @Entity
-@Table(name="_info")
+@Table(name="info_info")
 @DynamicInsert
 @DynamicUpdate
 public class InfoSingle extends Info implements Serializable {

@@ -1,0 +1,1044 @@
+
+@charset "utf-8";
+/*----------CSS Information-------------*/
+/*Name:base.css
+*/
+
+/* -- 基础部分 start--*/
+*{padding:0; margin:0;}
+body{
+	background-color:#edeeef;
+	font:normal 14px/26px  "微软雅黑", "宋体", Arial, Geneva, Helvetica, sans-serif;
+}
+img{border:0px;vertical-align:middle;}
+button{border:none;}
+span,p,a,select,input,img,button,h4{vertical-align:middle;}
+ul li,ol li{list-style-type:none;text-align:left;}
+h1, h2, h3, h4 {font-weight: bold;text-align: left;}
+h1 { font-size:26px;}
+h2 {color:#FFFFFF; font-size:16px;}
+h3 {color:#515151; font-size:16px;}
+h4 {color:#515151; font-size:14px;}
+td, th {vertical-align: top;}
+em, strong {font-style: normal; color: #c30000;}
+a{color:#40648a; text-decoration: none;}
+a:hover{text-decoration:underline;}
+.c {clear:both;}
+.fl { float:left;}
+.fr { float:right;}
+.tl { text-align:left; padding-left:3px;}
+.tr { text-align:right;}
+.tc { text-align:center;}
+/* -- 基础部分 end --*/
+
+/* -- header start --*/
+.header{
+	background:url(../images/bg_header.png) repeat-x 0 0;
+	height:115px;
+	padding-top:10px;
+	position:relative;
+}
+.mainwidth{
+	width:980px;
+	margin:0 auto;
+}
+.logo{
+	background:url(../images/pic_logo.png) no-repeat 0 0;
+	display:inline-block;
+	width:160px;
+	height:56px;
+}
+.header li{
+	float:right;
+	margin-left:10px;
+	font-size:13px;
+}
+.header li a{color:#666;}
+.header li a:hover{color:#4d89cc;}
+.headline{
+	background:url(../images/pic_HeadLine.png) no-repeat 0 0;
+	width:3px;
+	height:10px;
+	margin-top:3px;
+}
+.header ul.nav{
+	width:980px;
+	height:40px;
+	margin-top:4px;
+}
+.header ul.nav li{
+	float:left;
+	margin:0px;
+}
+.header ul.nav li a{
+	/*background:url(../images/bg_HeadNav.png) no-repeat 0 0;*/
+	display:block;
+	width:129px;
+	height:40px;
+	text-align:center;
+	font-size:15px;
+	line-height:40px;
+	color:#FFF;
+}
+.header ul.nav li a:hover{
+	background:url(../images/btn_HeadNav_on.png) no-repeat 0 0;
+	text-decoration:none;
+}
+.headnav_on{
+	background:url(../images/btn_HeadNav_on.png) no-repeat 0 0;
+	text-decoration:none;
+	display:block;
+	width:129px;
+	height:40px;
+	text-align:center;
+	font-size:15px;
+	line-height:40px;
+	color:#FFF;
+}
+/* -- header end --*/
+/* -- footer start --*/
+.footer{
+	font:normal 12px/26px Arial;
+	width:600px;
+	margin:45px auto;
+	*padding-bottom:45px;
+	font-size:12px;
+	color:#999999;
+}
+/* -- footer end --*/
+
+/* -- UserLogin page start --*/
+.login{
+	padding:25px 30px;
+	border:1px solid #d0dae1;
+	background-color:#FFF;
+}
+.user_login{
+	margin:47px auto;
+	width:420px;
+}
+.login li, .leftlayout li, .rightlayout li, .contitle li{
+	float:left;
+	margin-right:10px;
+}
+span.titleline{
+	background:url(../images/icon_TitleLine.png) no-repeat 0 0;
+	width:5px;
+	height:14px;
+	display:block;
+	margin-top:6px;
+}
+p.engtitle{
+	color:#bcbcbc;
+	font-size:15px;
+}
+.login table{
+	margin:20px auto;
+	line-height:48px;
+	text-align:right;
+	color:#6b6b6b;
+}
+.login table input{
+	width:190px;
+	height:30px;
+	margin:10px 0px 10px 10px;
+	padding:0 5px;
+	border:1px solid #b1c2d6;
+	font:normal 13px/30px  "微软雅黑";
+}
+.login table input.code{
+	margin-right:10px;
+	width:90px;
+}
+.login table td a{
+	color:#799cbb;
+	text-align:right;
+}
+.login table td a.btn_login, .confirm a.btn_login{
+	background:url(../images/btn_login.png) no-repeat 0 0;
+	display:block;
+	width:101px;
+	height:41px;
+	float:left;
+	text-align:center;
+	line-height:40px;
+	font-size:15px;
+	font-weight:bold;
+	color:#FFF;
+	margin:10px 0px 0px 10px;
+}
+.login table td a.btn_login:hover, .confirm a.btn_login:hover{
+	background:url(../images/btn_login_on.png) no-repeat 0 0;
+	text-decoration:none;
+}
+/* -- UserLogin page end--*/
+
+/* -- UserRegister page start --*/
+.user_register{
+	margin:47px auto;
+	width:920px;
+}
+.login table td em{
+	color:#FF0000;
+	font-size:12px;
+}
+.sizeright{
+	font-size:12px;
+	text-align:left;
+	padding-left:10px;
+}
+/* -- UserRegister page end --*/
+
+/* -- ForgotPassword page start --*/
+.login table td a.sizeright{color:#868686;}
+/* -- ForgotPassword page end --*/
+
+/* -- ChangePassword page start --*/
+.boxstyle{
+	float:left;
+	margin-top:5px;
+	border:1px solid #d0dae1;
+	background-color:#FFF;
+}
+.leftlayout{
+	background:#FFF url(../images/bg_subnav.png) no-repeat 0 bottom;
+	display:block;
+	padding:25px 0px;
+	width:230px;
+	height:480px;
+	position:relative;
+}
+.leftlayout ul, .contitle ul{margin-left:28px;}
+.subtitle{
+	background:url(../images/icon_SubnavTitle.png) no-repeat 0 0;
+	/*display:block;*/
+	width:32px;
+	height:38px;
+	position:absolute;
+	left:-7px;
+	top:18px;
+}/*subtitle相对定位于leftlayout*/
+.leftlayout .subnav{
+	margin-top:40px;
+	width:180px;
+}
+.leftlayout .subnav li{
+	float:none;
+	clear:both;
+	font-size:16px;
+	line-height:48px;
+	*line-height:normal;
+}
+.leftlayout .subnav li a{
+	padding-left:15px;
+	color:#6b6b6b;
+}
+.leftlayout .subnav li a:hover{
+	background:url(../images/icon_TitleLine.png) no-repeat 0 center;
+	display:inline-block;
+	color:#6592d5;
+	text-decoration:none;
+}
+.leftlayout .subnav li .subnav_on{
+	background:url(../images/icon_TitleLine.png) no-repeat 0 center;
+	display:inline-block;
+	color:#6592d5;
+	text-decoration:none;
+	padding-left:15px;
+}
+.subline{
+	background:url(../images/pic_SubnavLine.png) no-repeat 0 center;
+	display:block;
+	width:180px;
+	height:3px;
+	*height:26px;
+}
+.rightlayout{
+	margin-top:5px;
+	position:relative;
+	float:right;
+	width:665px;
+	min-height:480px;
+}
+.login table td a.btn_cancel, .confirm a.btn_cancel{
+	background:url(../images/btn_cancel.png) no-repeat 0 0;
+	display:block;
+	width:101px;
+	height:41px;
+	text-align:center;
+	line-height:40px;
+	font-size:15px;
+	font-weight:bold;
+	color:#FFF;
+	margin:10px 0px 0px 10px;
+}
+.login table td a.btn_cancel:hover, .confirm a.btn_cancel:hover{
+	background:url(../images/btn_cancel_on.png) no-repeat 0 0;
+	text-decoration:none;
+}
+/* -- ChangePassword page end --*/
+
+/* -- ManageResumes page start --*/
+.rightlayout table.tabmanage{
+	font-size:13px;
+	text-align:center;
+	margin:0px;
+}
+.rightlayout table.tabmanage td{line-height:50px;}
+.rightlayout .tabtips{
+	background-color:#e8eff7;
+	margin:15px 0;
+	text-align:center;
+	height:25px;
+	color:#6691B7;
+	font-size:12px;
+}
+.rightlayout table.tabmanage a{color:#40648a; text-decoration: none;}
+.rightlayout table.tabmanage a:hover{text-decoration:underline;}
+.valigncenter{vertical-align:middle;}
+.graybackground{background-color:#F2F2F2;}
+.rightlayout table tfoot{color:#6691B7;}
+/* -- ManageResumes page end --*/
+
+/* -- memberFavoratePosition page start --*/
+.contitleline{
+	background:url(../images/pic_ContitleLine.png) no-repeat 0 bottom;
+	display:inline-block;
+	width:667px;
+	height:36px;
+	margin-bottom:10px;
+}
+.rightlayout table.tabmanage ul{float:right;}
+.rightlayout table.tabmanage ul li{
+	float:left;
+	margin-right:15px;
+	vertical-align:middle;
+}
+.rightlayout table.tabmanage ul li a{
+	border:1px solid #d7d7d7;
+	display:block;
+	line-height:20px;
+	margin-top:14px;
+	width:20px;
+	height:20px;
+	text-align:center;
+	color:#bcbcbc;
+}
+.rightlayout table.tabmanage ul li a:hover{
+	border:1px solid #5797d1;
+	text-align:center;
+	color:#5797d1;
+	text-decoration:none;
+}
+.rightlayout table.tabmanage ul li a:active{
+	background-color:#5797d1;
+	color:#FFF;
+}
+.rightlayout table.tabmanage ul li a.tabpage_on{
+	background-color:#5797d1;
+	border:1px solid #5797d1;
+	text-align:center;
+	width:20px;
+	height:20px;
+	color:#FFF;
+	text-decoration:none;
+}
+/* -- memberFavoratePosition page end --*/
+
+/* -- NewResume page start --*/
+.rightlayout ul.conav{
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	width:727px;
+	height:34px;
+	background:url(../images/bg_conav.png) repeat-x 0 0;
+}/*conav相对定位于rightlayout*/
+	
+.rightlayout ul.conav li{
+	font:normal 13px/26px  "宋体", Arial;
+	margin-right:2px;
+}
+.rightlayout ul.conav li a{
+	background:url(../images/btn_conav.png) no-repeat 0 0;
+	display:block;
+	width:101px;
+	height:34px;
+	color:#6B6B6B;
+	line-height:38px;
+	text-align:center;
+}
+.rightlayout ul.conav li a:hover{text-decoration:none;}
+.rightlayout ul.conav li a:active{background:url(../images/btn_conav_on.png) no-repeat 0 0;}
+.rightlayout ul.conav li a.conav_on{
+	background:url(../images/btn_conav_on.png) no-repeat 0 0;
+	display:block;
+	width:101px;
+	height:34px;
+	color:#6B6B6B;
+	line-height:38px;
+	text-align:center;
+}
+/* 从附件上传 start */
+.rightlayout table.tabresume td input{width:275px;}
+.rightlayout table td input.language {
+	border:none;
+	width:15px;
+	margin-right:5px;
+}
+.rightlayout table button.browse{
+	background:url(../images/btn_browse.png) no-repeat 0 0;
+	display:block;
+	width:51px;
+	height:31px;
+	font:normal 13px/26px  "微软雅黑";
+	margin:10px 0 0 5px;
+	color:#6B6B6B;
+}
+.resumeheight{line-height:20px;}
+.rightlayout table td.sizeright em{color:#5797d1;}
+.resumetips{
+	padding-top:40px;
+	text-align:center;
+}
+.rightlayout table.tabresume{
+	margin-top:65px;
+	*margin-top:90px;
+}
+.btnresume{padding-top:10px;}
+
+
+/* -- NewResume page end --*/
+
+/* -- listPositionAll page start --*/
+.maincontent{
+	width:686px;
+	min-height:720px; /* height:920px; */
+	*min-height:750px;/* height:950px; */
+	padding:25px;
+	position:relative;
+}
+.rightbox{
+	background:url(../images/bg_rightbox.png) repeat-y 0 0;
+	display:inline-block;
+	margin-top:5px;
+	float:right;
+	width:240px;
+	min-height:772px;   /* height:972px; */
+	*min-height:802px; /* *height:802px; */
+}
+.jobsearch{margin-top:10px;}
+.jobsearch li{
+	float:left;
+	margin-right:2px;
+	margin-top:0px;
+	*margin-top:2px;
+	line-height:24px;
+	margin-bottom: 5px;
+}
+.jobsearch li a{
+	display:block;
+	padding:0 12px;
+	height:26px;
+	text-align:center;
+}
+.jobsearch li a:hover{
+	background-color:#4d89cc;
+	text-decoration:none;
+	color:#FFF;
+}
+.jobsearch h4{line-height:24px;}
+.choose_on{
+	background-color:#4d89cc;
+	display:block;
+	padding:0 12px;
+	height:26px;
+	text-align:center;
+	color:#FFF;
+}
+.headline{
+	background:url(../images/pic_HeadLine.png) no-repeat 0 center;
+	display:block;
+	width:3px;
+	height:26px;
+}
+.searchbox{
+	padding-top:0px;
+	*padding-top:0px;
+	margin:0 0 35px 83px;
+}
+.searchbox input{
+	border:1px solid #c5d9eb;
+	font:normal 13px/30px  "微软雅黑";
+	padding:0 5px;
+	width:410px;
+	height:30px;
+	color:#868686;
+	position:relative;
+}
+a.btn_search{
+	background:url(../images/btn_search.png) no-repeat 0 0;
+	display:inline-block;
+	width:50px;
+	height:32px;
+	position:absolute;
+}
+a:hover.btn_search{background:url(../images/btn_search_on.png) no-repeat 0 0;}
+.maincontent table thead th{
+	background-color:#f8f8f8;
+	border-top:2px solid #4d89cc;
+	line-height:32px;
+	color:#5e5e5e;
+	min-width: 60px;
+}
+.maincontent table tbody td{
+	line-height:38px;
+	color:#5e5e5e;
+	text-align:center;
+}
+.maincontent table tbody th{
+	line-height:32px;
+	font-weight:normal;
+	text-align:left;
+}
+.maincontent table tbody th.ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 200px;
+    display:inline-block;
+}
+.maincontent table tfoot td{
+	padding-top:28px;
+	color:#868686;
+}
+.maincontent table tfoot td em{color:#4d89cc;}
+.maincontent table tfoot td li{float:right;}
+.maincontent table tfoot td li a{
+	border:1px solid #d7d7d7;
+	text-align:center;
+	display:block;
+	color:#868686;
+	width:50px;
+	height:26px;
+	margin-left:5px;
+}
+.maincontent table tfoot td li a:hover{
+	border:1px solid #4d89cc;
+	background-color:#4d89cc;
+	text-decoration:none;
+	color:#FFF;
+}
+.currentpage{
+	background-color:#4d89cc;
+	text-decoration:none;
+	display:inline-block;
+	text-align:center;
+	color:#FFF;
+	width:50px;
+	height:28px;
+	margin-bottom:1px;
+}
+.maincontent table tfoot td input{
+	height:26px;
+	width:20px;
+	margin-left:5px;
+	border:1px solid #d7d7d7;
+	font:normal 13px/26px  "微软雅黑";
+}
+span.rightitle{
+	border-bottom:2px solid #4d89cc;
+	display:block;
+	margin:25px 20px 0px 20px;
+	width:200px;
+	height:30px;
+}
+.rightqa li{
+	list-style:disc;
+	margin:0 25px;
+	list-style-position:inside;
+	border-bottom:1px dotted #4d89cc;
+	line-height:38px;
+	color:#40648a;
+	font-size:9px;
+}
+.rightqa li a{font-size:13px;}
+.rightqa li a.ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 175px;
+    display:inline-block;
+}
+/* -- listPositionAll page end --*/
+
+/* -- viewPositionInfo page start --*/
+p.chititle{
+	color:#bcbcbc;
+	font-size:14px;
+}
+.chititle em{color:#515151;}
+.contxt{margin:20px 30px;}
+.contxt p{color:#515151;}
+.contxt ol li{
+	list-style-type:decimal;
+	list-style-position:inside;
+	color:#515151;
+}
+.contxt a.moreposition{
+	margin-top:40px;
+	font-size:13px;
+	float:right;
+}
+.contxt a.btn_applyposition{
+	background:url(../images/btn_ApplyPosition.png) no-repeat 0 0;
+	display:block;
+	margin:100px auto 50px auto; /* margin:100px auto; */
+	width:131px;
+	height:36px;
+}
+.contxt a.btn_applyposition:hover{background:url(../images/btn_ApplyPosition_on.png) no-repeat 0 0;}
+.applyposition{
+    min-height:720px; /* height:630px; */
+}
+.rightposition{height:682px;}
+/* -- viewPositionInfo page end --*/
+
+/* -- chooseResume page start --*/
+.jobsearch table.jobresult{margin-bottom:30px;}
+.jobsearch table.jobresult td{
+	line-height:32px;
+	text-align:left;
+}
+.jobsearch table.jobresult th{
+	width:80px;
+	color:#515151;
+	font-weight:bold;
+}
+.maincontent table.chooseresume tbody td{
+	line-height:80px;
+	color:#6b6b6b;
+	border-bottom:1px dotted #d7d7d7;
+}
+.maincontent table.chooseresume tbody input{
+	/* margin:33px 0 0 8px; */
+}
+.maincontent table.chooseresume tbody p{
+	margin-top:12px;
+	line-height:26px;
+}
+.maincontent table.chooseresume thead th{
+	line-height:60px;
+	background-color:#FFF;
+}
+.inpapply{
+	margin:50px auto; 
+	width:640px;
+}
+.inpapply input{
+	width:640px;
+	height:145px;
+	border:1px solid #d9d9d9;
+}
+.confirm{
+	width:270px;
+	margin:0px auto;
+}
+.maincontent h4.resumetitle{ margin-bottom:10px;}
+/* -- chooseResume page end --*/
+
+/* -- index page start --*/
+.indexbanner{
+	background-color:#454d5a;
+	height:350px;
+	width:100%;
+	position:absolute;
+	z-index:-1;
+	top:110px;
+	left:0px;
+}/*indexbanner相对定位于header*/
+.indexleft{
+    margin-top:20px;
+	float:left;
+	width:608px;
+}
+.indexlbox{
+	background:url(../images/bg_indexleftbox.png) no-repeat 0 0;
+	height:259px;
+	margin-bottom:17px;
+	padding:25px 0 0 30px;
+	position:relative;
+}
+.indexlbox li a {padding:0 10px;}
+.indexlbox li a.ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 250px;
+    display:inline-block;
+}
+.indexsubtitle{
+	background:url(../images/icon_SubnavTitle.png) no-repeat 0 0;
+	display:block;
+	width:32px;
+	height:38px;
+	position:absolute;
+	left:-4px;
+	top:18px;
+}/*indexsubtitle相对定位于indexlbox*/
+.indexright{
+    margin-top:20px;
+	float:right;
+	width:367px;
+}
+.indexrbox{
+	background:url(../images/bg_indexrightbox.png) no-repeat 0 0;
+	height:259px;
+	margin:0 0 20px 8px;
+	padding:25px 0 0 30px;
+}
+.indexvideo{
+	background:url(../images/bg_indexvideo.png) no-repeat 0 0;
+	margin-left:9px;
+	width:355px;
+	height:280px;
+	position:relative;
+}
+a.btn_video{
+	background:url(../images/btn_video.png) no-repeat 0 0;
+	display:block;
+	position:absolute;
+	top:105px;
+	left:150px;
+	width:69px;
+	height:70px;
+}/*btn_video相对定位于.indexvideo*/
+a.btn_video:hover{background:url(../images/btn_video_on.png) no-repeat 0 0;}
+.bspace{
+	display:block;
+	width:70px;
+	*width:71px;
+	height:26px;
+}
+.frsearch{
+    margin-top:20px;
+    *margin-right:15px;
+}
+/*.frsearch{
+	float:right;
+	margin-right:31px;
+	*margin-top:20px;
+	*margin-right:15px;
+}*/
+.morespace{
+	float:right;
+	margin-right:20px;
+}
+a.more{
+  background:url("../images/u210_normal.png") no-repeat 0 0;
+  display:inline-block;
+  margin-top:5px;
+  width:47px;
+  height:18px;
+}
+a.more:hover{background:url("../images/u210_mouseOver.png") no-repeat 0 0;}
+.rightlist{
+	margin-top:20px;
+}
+.rightlist li{
+	list-style:disc;
+	list-style-position:inside;
+	line-height:32px;
+	color:#40648a;
+	font-size:9px;	
+}
+.rightlist li a{font-size:13px;}
+.rightlist li a.ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 280px;
+    display:inline-block;
+}
+.rightlistbtn a.btn_inapply{
+	background:url(../images/btn_inapply.png) no-repeat 0 0;
+	display:block;
+	width:131px;
+	height:36px;
+}
+
+.rightlistbtn a.btn_studioapply{
+	background:url(../images/btn_studioapply.png) no-repeat 0 0;
+	display:block;
+	width:131px;
+	height:36px;
+}
+
+.rightlistbtn{
+	width:280px;
+	margin:20px 0 0 10px;
+}
+.consubnav{
+	height:29px;
+	margin:0 20px 0 90px;
+	border-bottom:2px solid #4d89cc;
+}
+.consubnav li{float:left;}
+.consubnav li a{
+	display:block;
+	text-align:center;
+	min-width:52px;
+	max-width:71px;
+	height:29px;
+}
+.consubnav li a:hover{
+	background:url(../images/btn_consubnav.png) no-repeat 0 0;
+	color:#FFF;
+	text-decoration:none;
+}
+.consubnav_on{
+	background:url(../images/btn_consubnav.png) no-repeat 0 0;
+	display:block;
+	color:#FFF;
+	text-align:center;
+    min-width:52px;
+    max-width:71px;
+	height:29px;
+}
+ul.joblist{margin:10px 0 0 0px;}
+ul.joblist li{
+  float:left;
+  font-size:13px;
+  margin:0 5px;
+	line-height:32px;
+  width: 540px;
+}
+/*table.joblist{margin:10px 0 0 15px;}
+table.joblist td{
+	font-size:13px;
+	line-height:32px;
+}*/
+/* -- index page end --*/
+
+/* -- AboutSina page start --*/
+.introbanner{
+	background:#0e4b89 url(../images/pic-IntroBanner.png) no-repeat center 0;
+	height:120px;
+	width:100%;
+	position:absolute;
+	z-index:-1;
+	top:110px;
+	left:0px;
+}
+.introheight{
+	margin-top:0px;
+	*padding-top:0px;
+}
+.introlayout{
+    min-height: 480px;
+	margin-top:5px;
+	position:relative;
+	float:right;
+	width:665px;
+}
+.txtintro{margin:30px 15px;}
+.txtintro p{
+	margin-bottom:25px;
+	font-size:14px;
+	color:#666;
+}
+.txtintro li{
+	list-style-type:disc;
+	list-style-position:outside;
+	line-height:16px;
+	margin-left:15px;
+	font-size:9px;
+	color:#666;
+}
+.imgspace{margin:10px;}
+.imgheight{margin-bottom:40px;}
+/* -- AboutSina page end--*/
+
+/* -- ContactUs page start--*/
+.contactsina{
+	margin:5px auto;
+	width:920px;
+	position:relative;
+}
+table.tabcontact td{text-align:left;}
+table.tabcontact td p{line-height:26px;}
+table.tabcontact td a.btn_check{
+	background:url(../images/btn_check.png) no-repeat 0 0;
+	display:block;
+	width:81px;
+	height:29px;
+	color:#FFF;
+	line-height:29px;
+	text-align:center;
+	margin-top:25px;
+}
+table.tabcontact td a.btn_check:hover{
+	background:url(../images/btn_check_on.png) no-repeat 0 0;
+	text-decoration:none;
+}
+table.tabcontact td span{float:left;}
+.tabline{border-right:1px solid #e4e4e4；}
+.address{
+	margin:15px 0px 25px 80px;
+}
+.pic_no1{
+	background:url(../images/pic_number.png) no-repeat 0 0;
+	display:inline-block;
+	width:79px;
+	height:63px;
+}
+.pic_no2{
+	background:url(../images/pic_number.png) no-repeat -79px 0;
+	display:inline-block;
+	width:79px;
+	height:63px;
+}
+.pic_no3{
+	background:url(../images/pic_number.png) no-repeat -158px 0;
+	display:inline-block;
+	width:79px;
+	height:63px;
+}
+.pic_no4{
+	background:url(../images/pic_number.png) no-repeat -237px 0;
+	display:inline-block;
+	width:79px;
+	height:63px;
+}
+.pic_no5{
+	background:url(../images/pic_number.png) no-repeat -316px 0;
+	display:inline-block;
+	width:79px;
+	height:63px;
+}
+.pic_no6{
+	background:url(../images/pic_number.png) no-repeat -395px 0;
+	display:inline-block;
+	width:79px;
+	height:63px;
+}
+.pic_no7{
+	background:url(../images/pic_number.png) no-repeat -474px 0;
+	display:inline-block;
+	width:79px;
+	height:63px;
+}
+.pic_no8{
+	background:url(../images/pic_number.png) no-repeat -553px 0;
+	display:inline-block;
+	width:79px;
+	height:63px;
+}
+/* -- ContactUs page end--*/
+.smallwindow{
+  position:absolute;
+  top:300px;
+  margin-left:250px;
+  *margin-left:-490px;
+  z-index:100;
+  width:440px;
+  background-color:#edeeef;
+  border:1px solid #CCC;
+}
+.wincontent{
+  margin:15px;
+  font-size:13px;
+  color:#666;
+}
+.wincontent p{display:inline;}
+.wintitle{
+  height:32px;
+  background-color:#4d89cc;
+  margin:5px;
+  padding:0 10px;
+  color:#FFF;
+  line-height:32px;
+}
+.winclose a{
+  float:right;
+  color:#FFF;
+  font-family:Verdana, Geneva, sans-serif;
+}
+.winclose a:hover{text-decoration:none;}
+
+.user_register .hrs_radioLabel input{border:none;width:15px;margin-right:5px;}
+.rightlayout table.tabmanage td.listTop {height:50px ;line-height:30px;text-align: center;vertical-align:bottom;}
+.rightlayout table.tabmanage td.listmiddle {line-height:20px;text-align: center;vertical-align:middle;}
+.rightlayout table.tabmanage td.listButtom {height:50px ;line-height:30px;text-align: center;vertical-align:top;}
+/*dynamic company*/
+.txtintro .txt_title{
+	margin-bottom:25px;
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+	text-align:center;
+}
+.txtintro .reback{
+	text-align:right;
+}
+.txtintro .text{
+    text-indent:28px;
+}
+.dynamic_list {
+  min-height: 400px;
+}
+.dynamic_list ul{
+  margin-top:10px;
+  overflow:hidden;
+}
+.dynamic_list li{
+	list-style:disc;
+	list-style-position:inside;
+	line-height:50px;
+	color:#40648a;
+	font-size:9px;
+	width:100%;
+	clear:both;
+	border-bottom:1px dotted #D7D7D7;
+}
+.dynamic_list li a{font-size:13px;}
+.dynamic_list li span{
+    float:right;
+	line-height:50px;
+	color:#999999;
+	font-size:13px;
+}
+.maincontent .fy{
+   margin-top:-20px;
+}
+.maincontent .fy li{ 
+    line-height:25px;
+	margin-right:0px;
+	float:right;
+}
+.maincontent .fy li input{ 
+	margin-top:0px;
+}
+.otherlayout{
+	margin-top:5px;
+	position:relative;
+	float:right;
+	width:665px;
+	height:480px;
+}
+.qastyle .selected{
+   background-color:#4D89CC;
+   color:#FFFFFF;
+    height:32px;
+	line-height:32px;
+	margin:2px 0px;
+    width:180px;
+    display:inline-block;
+}
+.qastyle a{
+  padding:0px 0px 0px 10px;
+}
+.qastyle li{
+  list-style:none;
+}
+

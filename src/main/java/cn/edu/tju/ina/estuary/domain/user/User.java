@@ -17,7 +17,7 @@ import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.validator.constraints.Email;
 
 @Entity
-@Table(name = "_user")
+@Table(name = "info_user")
 @DynamicInsert
 @DynamicUpdate
 public class User implements Serializable {
@@ -57,6 +57,7 @@ public class User implements Serializable {
 		this.id = id;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getUsername() {
 		return username;
 	}
@@ -65,6 +66,7 @@ public class User implements Serializable {
 		this.username = username;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getNickname() {
 		return nickname;
 	}
@@ -73,6 +75,7 @@ public class User implements Serializable {
 		this.nickname = nickname;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getRealname() {
 		return realname;
 	}
@@ -81,6 +84,7 @@ public class User implements Serializable {
 		this.realname = realname;
 	}
 
+	@Column(nullable=false, columnDefinition="int(3) default 2") // 2 == secret
 	public Integer getGender() {
 		return gender;
 	}
@@ -89,6 +93,7 @@ public class User implements Serializable {
 		this.gender = gender;
 	}
 
+	@Column(nullable=false, columnDefinition="int(2) default 1")
 	public Integer getAuth() {
 		return auth;
 	}
@@ -98,7 +103,7 @@ public class User implements Serializable {
 	}
 
 	@Email
-	@Column(unique=true)
+	@Column(unique=true, nullable=false, columnDefinition="varchar(50) default ''")
 	public String getEmail() {
 		return email;
 	}
@@ -107,6 +112,7 @@ public class User implements Serializable {
 		this.email = email;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(15) default ''")
 	public String getPhone() {
 		return phone;
 	}
@@ -115,6 +121,7 @@ public class User implements Serializable {
 		this.phone = phone;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getAvatar() {
 		return avatar;
 	}
@@ -123,7 +130,7 @@ public class User implements Serializable {
 		this.avatar = avatar;
 	}
 
-	@Column(name="lastlogintime")
+	@Column(name="lastlogintime", nullable=false, columnDefinition="varchar(50) default ''")
 	public String getLastLoginTime() {
 		return lastLoginTime;
 	}
@@ -132,7 +139,7 @@ public class User implements Serializable {
 		this.lastLoginTime = lastLoginTime;
 	}
 
-	@Column(name="logintimes")
+	@Column(name="logintimes", nullable=false, columnDefinition="int default 0")
 	public Integer getLoginTimes() {
 		return loginTimes;
 	}
@@ -141,7 +148,7 @@ public class User implements Serializable {
 		this.loginTimes = loginTimes;
 	}
 
-	@Column(name="addtime")
+	@Column(name="addtime", nullable=false, columnDefinition="TIMESTAMP default CURRENT_TIMESTAMP")
 	public Timestamp getAddTime() {
 		return addTime;
 	}

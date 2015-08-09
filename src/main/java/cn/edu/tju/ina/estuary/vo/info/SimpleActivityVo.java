@@ -11,7 +11,7 @@ public class SimpleActivityVo extends SimpleInfoVo {
 	public SimpleActivityVo(Activity info) {
 		super(info);
 		this.area = info.getArea();
-		this.time = info.getTime();
+		this.time = info.getTime().toString();
 		this.orgName = info.getOrgName();
 	}
 	

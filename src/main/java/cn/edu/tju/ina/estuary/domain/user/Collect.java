@@ -17,7 +17,7 @@ import org.hibernate.annotations.DynamicInsert;
 import cn.edu.tju.ina.estuary.domain.info.InfoSingle;
 
 @Entity
-@Table(name="_collect")
+@Table(name="info_collect")
 @DynamicInsert
 public class Collect implements Serializable {
 
@@ -64,7 +64,7 @@ public class Collect implements Serializable {
 		this.type = type;
 	}
 	
-	@Column(name="cotime")
+	@Column(name="cotime", nullable=false, columnDefinition="TIMESTAMP default CURRENT_TIMESTAMP")
 	public Timestamp getAddTime() {
 		return addTime;
 	}

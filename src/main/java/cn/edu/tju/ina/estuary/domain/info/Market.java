@@ -1,5 +1,6 @@
 package cn.edu.tju.ina.estuary.domain.info;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -10,7 +11,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 @Entity
-@Table(name="_market")
+@Table(name="info_market")
 @PrimaryKeyJoinColumn(name="id")
 @DynamicInsert
 @DynamicUpdate
@@ -31,12 +32,16 @@ public class Market extends InfoUntyped {
 	public void setCategory(MarketCategory category) {
 		this.category = category;
 	}
+	
+	@Column(nullable=false, columnDefinition="double default 0.0")
 	public double getPrice() {
 		return price;
 	}
 	public void setPrice(double price) {
 		this.price = price;
 	}
+	
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getContact() {
 		return contact;
 	}
@@ -46,6 +51,8 @@ public class Market extends InfoUntyped {
 	public void setComplete(Boolean complete) {
 		this.complete = complete;
 	}
+	
+	@Column(nullable=false, columnDefinition="bit default 0")
 	public Boolean getComplete() {
 		return complete;
 	}

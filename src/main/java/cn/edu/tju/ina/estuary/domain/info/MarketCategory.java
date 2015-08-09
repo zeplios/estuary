@@ -2,13 +2,14 @@ package cn.edu.tju.ina.estuary.domain.info;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="_market_category")
+@Table(name="info_market_category")
 public class MarketCategory implements Serializable {
 	/** Default value included to remove warning. Remove or modify at will. **/
 	private static final long serialVersionUID = 1L;
@@ -27,6 +28,7 @@ public class MarketCategory implements Serializable {
 		this.id = id;
 	}
 
+	@Column(nullable=false, columnDefinition="varchar(50) default ''")
 	public String getName() {
 		return name;
 	}
